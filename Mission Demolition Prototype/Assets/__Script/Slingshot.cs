@@ -75,7 +75,6 @@ public class Slingshot : MonoBehaviour{
         aimingMode = true;
         projectile = Instantiate(prefabProjectile) as GameObject;//Crea una instancia del projectil y la pone en posicion
         projectile.transform.position = launchPos;
-        projectile.GetComponent<Rigidbody>().isKinematic = true;
         projectileRigidbody = projectile.GetComponent<Rigidbody>();
         projectileRigidbody.isKinematic = true;
     }
